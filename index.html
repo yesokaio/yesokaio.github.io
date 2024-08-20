@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="countdown" class="countdown">
+            <div class="countdown__item">
+                <div class="countdown__number" id="days">00</div>
+                <div class="countdown__label">Tage</div>
+            </div>
+            <div class="countdown__item">
+                <div class="countdown__number" id="hours">00</div>
+                <div class="countdown__label">Stunden</div>
+            </div>
+            <div class="countdown__item">
+                <div class="countdown__number" id="minutes">00</div>
+                <div class="countdown__label">Minuten</div>
+            </div>
+            <div class="countdown__item">
+                <div class="countdown__number" id="seconds">00</div>
+                <div class="countdown__label">Sekunden</div>
+            </div>
+        </div>
+        <div id="end-date" class="end-date"></div>
+        
+        <!-- Menü-Icon -->
+        <img id="hamburger-icon" src="https://cdn-icons-png.flaticon.com/128/558/558593.png" alt="Menu Icon">
+    </div>
+
+    <div id="color-picker" class="color-picker">
+        <div class="color-picker__item">
+            <label for="background-color-picker">Hintergrundfarbe:</label>
+            <input type="color" id="background-color-picker">
+            <div id="background-color" class="color-display"></div>
+        </div>
+        <div class="color-picker__item">
+            <label for="number-background-color-picker">Ziffernblattfarbe:</label>
+            <input type="color" id="number-background-color-picker">
+            <div id="number-background-color" class="color-display"></div>
+        </div>
+        <div class="color-picker__item">
+            <label for="number-color-picker">Ziffernfarbe:</label>
+            <input type="color" id="number-color-picker">
+            <div id="number-color" class="color-display"></div>
+        </div>
+        <div class="color-picker__item">
+            <label for="label-color-picker">Beschriftungsfarbe:</label>
+            <input type="color" id="label-color-picker">
+            <div id="label-color" class="color-display"></div>
+        </div>
+        <div class="color-picker__item">
+            <label for="container-background-color-picker">Container-Farbe:</label>
+            <input type="color" id="container-background-color-picker">
+            <div id="container-background-color" class="color-display"></div>
+        </div>
+        <div class="color-picker__item">
+            <label for="size-slider">Größe anpassen:</label>
+            <input type="range" id="size-slider" min="0.1" max="1" step="0.01" value="1">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
